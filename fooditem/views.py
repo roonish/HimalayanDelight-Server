@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.viewsets import ModelViewSet
+from rest_framework.filters import SearchFilter,OrderingFilter
 from .models import *
 from .serializers import *
 
@@ -8,8 +9,10 @@ from .serializers import *
 class FoodItemViewSet(ModelViewSet):
     queryset = FoodItem.objects.all()
     serializer_class=FoodItemSerializer
-    filter_backends=[DjangoFilterBackend]
+    filter_backends=[DjangoFilterBackend,SearchFilter,OrderingFilter]
     filterset_fields = ['collection_id']
+    search_fields = ['name','desc']
+    ordering_fields = ['unit_price']
 
 class FoodCollectionViewSet(ModelViewSet):
     queryset = FoodCollection.objects.all()
