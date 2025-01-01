@@ -2,11 +2,15 @@ from django.shortcuts import render
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.filters import SearchFilter,OrderingFilter
+import logging
 from .models import *
 from .serializers import *
 
+logger = logging.getLogger(__name__)
+
 # Create your views here.
 class FoodItemViewSet(ModelViewSet):
+    logger.info('Calling all object from fooditem')
     queryset = FoodItem.objects.all()
     serializer_class=FoodItemSerializer
     filter_backends=[DjangoFilterBackend,SearchFilter,OrderingFilter]
