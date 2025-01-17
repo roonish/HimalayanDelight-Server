@@ -17,6 +17,7 @@ class CartItemSerializer(serializers.ModelSerializer):
         fields = ['foodItem','quantity']
 
 class FavouriteSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Favourite
-        fields = ['foodItem']
+     foodItem = FoodItemSerializer()
+     class Meta:
+            model = Favourite
+            fields = ['foodItem']
