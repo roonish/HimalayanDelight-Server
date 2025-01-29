@@ -9,7 +9,7 @@ class FoodCollectionSerializer(serializers.ModelSerializer):
 class FoodItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = FoodItem
-        fields= ['name','desc','calory','unit_price','rating','collection']
+        fields= ['name','desc','calory','unit_price','rating','collection','img']
 
 class CartItemSerializer(serializers.ModelSerializer):
     class Meta:
