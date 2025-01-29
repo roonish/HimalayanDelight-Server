@@ -18,6 +18,7 @@ class FoodItem(models.Model):
     unit_price = models.DecimalField(max_digits=4,decimal_places=2)
     rating = models.PositiveSmallIntegerField(default=1)
     collection = models.ForeignKey(FoodCollection,on_delete=models.PROTECT)
+    img = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name
