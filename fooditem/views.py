@@ -29,3 +29,4 @@ class CartItemViewSet(ModelViewSet):
 class FavouritesViewSet(ModelViewSet):
     queryset = Favourite.objects.all()
     serializer_class=FavouriteSerializer
+    lookup_field = 'id'
