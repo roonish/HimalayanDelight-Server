@@ -227,3 +227,67 @@ Calling all object from fooditem
 Not Found: /
 Not Found: /favicon.ico
 Not Found: /himalayandelight/
+Watching for file changes with StatReloader
+Calling all object from fooditem
+Not Found: /
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Calling all object from fooditem
+Not Found: /
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Calling all object from fooditem
+Watching for file changes with StatReloader
+Calling all object from fooditem
+C:\Users\ronis\OneDrive\Desktop\himalayanDelightServer\fooditem\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\ronis\OneDrive\Desktop\himalayanDelightServer\fooditem\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Calling all object from fooditem
+C:\Users\ronis\OneDrive\Desktop\himalayanDelightServer\fooditem\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Calling all object from fooditem
+Watching for file changes with StatReloader
+Calling all object from fooditem
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /himalayandelight/
+Watching for file changes with StatReloader
+Calling all object from fooditem
+Not Found: /himalayandelight/favourites11
+Internal Server Error: /himalayandelight/favourites/11
+Traceback (most recent call last):
+  File "C:\Users\ronis\.virtualenvs\himalayanDelightServer-rHv5xXY_\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ronis\.virtualenvs\himalayanDelightServer-rHv5xXY_\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ronis\.virtualenvs\himalayanDelightServer-rHv5xXY_\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ronis\.virtualenvs\himalayanDelightServer-rHv5xXY_\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via DELETE, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining DELETE data. Change your form to point to 10.0.2.2:8000/himalayandelight/favourites/11/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Not Found: /himalayandelight/favourites/11/
+Not Found: /himalayandelight/favourites/11/
+Watching for file changes with StatReloader
+Calling all object from fooditem
+Not Found: /favourites/11/
+C:\Users\ronis\OneDrive\Desktop\himalayanDelightServer\fooditem\views.py changed, reloading.
+Watching for file changes with StatReloader
+Calling all object from fooditem
+Not Found: /favourites/11/
+Not Found: /himalayandelight/favourites/11/
+Watching for file changes with StatReloader
+Calling all object from fooditem
+Watching for file changes with StatReloader
+Calling all object from fooditem
+Not Found: /
+Watching for file changes with StatReloader
+Calling all object from fooditem
+Watching for file changes with StatReloader
+Calling all object from fooditem
+C:\Users\ronis\OneDrive\Desktop\himalayanDelightServer\fooditem\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Calling all object from fooditem
