@@ -41,3 +41,8 @@ class Favourite(models.Model):
     def __str__(self):
         return self.foodItem.name
     
+
+class Recommendation(models.Model):
+    foodItem = models.ForeignKey(FoodItem, on_delete=models.CASCADE)
+
+    
