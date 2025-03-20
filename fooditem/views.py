@@ -9,6 +9,11 @@ import logging
 from .models import *
 from .serializers import *
 
+from rest_framework.viewsets import ModelViewSet
+from rest_framework.response import Response
+from .models import Favourite
+from .serializers import FavouriteSerializer
+
 logger = logging.getLogger(__name__)
 
 # Create your views here.
@@ -29,10 +34,6 @@ class CartItemViewSet(ModelViewSet):
     queryset = CartItem.objects.all()
     serializer_class=CartItemSerializer
 
-from rest_framework.viewsets import ModelViewSet
-from rest_framework.response import Response
-from .models import Favourite
-from .serializers import FavouriteSerializer
 
 class FavouritesViewSet(ModelViewSet):
     queryset = Favourite.objects.all()
