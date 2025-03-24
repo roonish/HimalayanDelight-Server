@@ -12,9 +12,15 @@ class FoodItemSerializer(serializers.ModelSerializer):
         fields= ['id','name','desc','calory','unit_price','rating','collection','img']
 
 class CartItemSerializer(serializers.ModelSerializer):
+    foodItem = FoodItemSerializer()
+    subTotal = serializers.SerializerMethodField()
+
     class Meta:
         model = CartItem
-        fields = ['foodItem','quantity']
+        fields = ['id','foodItem','quantity','subTotal']
+
+    def get_subTotal(self,obj):
+         return obj.quantity * obj.foodItem.unit_price
 
 class FavouriteSerializer(serializers.ModelSerializer):
      foodItem = FoodItemSerializer()

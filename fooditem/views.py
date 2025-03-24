@@ -34,6 +34,17 @@ class CartItemViewSet(ModelViewSet):
     queryset = CartItem.objects.all()
     serializer_class=CartItemSerializer
 
+    def list(self, request, *args, **kwargs):
+        queryset = self.get_queryset()
+        serializer = self.get_serializer(queryset,many=True)
+
+        # Calculate the total subtotal of all cart items
+        total_subtotal = sum(item['subTotal'] for item in serializer.data)
+        return Response({
+            "cart_items":serializer.data,
+            "total_subtotal":total_subtotal
+        })
+
 
 class FavouritesViewSet(ModelViewSet):
     queryset = Favourite.objects.all()

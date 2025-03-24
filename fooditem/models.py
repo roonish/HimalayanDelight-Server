@@ -30,6 +30,8 @@ class CartItem(models.Model):
     foodItem = models.ForeignKey(FoodItem,on_delete=models.CASCADE)
     quantity = models.PositiveSmallIntegerField(  
         validators=[MinValueValidator(1)])
+    subTotal = models.DecimalField(  max_digits=10, decimal_places=2, default=0,
+        validators=[MinValueValidator(1)])
     
     def __str__(self):
         return self.foodItem.name
