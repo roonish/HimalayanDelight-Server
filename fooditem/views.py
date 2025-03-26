@@ -9,6 +9,11 @@ import logging
 from .models import *
 from .serializers import *
 
+from rest_framework.viewsets import ModelViewSet
+from rest_framework.response import Response
+from .models import Favourite
+from .serializers import FavouriteSerializer
+
 logger = logging.getLogger(__name__)
 
 # Create your views here.
@@ -29,10 +34,17 @@ class CartItemViewSet(ModelViewSet):
     queryset = CartItem.objects.all()
     serializer_class=CartItemSerializer
 
-from rest_framework.viewsets import ModelViewSet
-from rest_framework.response import Response
-from .models import Favourite
-from .serializers import FavouriteSerializer
+    def list(self, request, *args, **kwargs):
+        queryset = self.get_queryset()
+        serializer = self.get_serializer(queryset,many=True)
+
+        # Calculate the total subtotal of all cart items
+        total_subtotal = sum(item['subTotal'] for item in serializer.data)
+        return Response({
+            "cart_items":serializer.data,
+            "total_subtotal":total_subtotal
+        })
+
 
 class FavouritesViewSet(ModelViewSet):
     queryset = Favourite.objects.all()
