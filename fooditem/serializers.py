@@ -12,7 +12,7 @@ class FoodItemSerializer(serializers.ModelSerializer):
         fields= ['id','name','desc','calory','unit_price','rating','collection','img']
 
 class CartItemSerializer(serializers.ModelSerializer):
-    foodItem = FoodItemSerializer()
+    foodItem = FoodItemSerializer(read_only=True)
     subTotal = serializers.SerializerMethodField()
 
     class Meta:
