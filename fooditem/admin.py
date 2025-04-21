@@ -6,5 +6,5 @@ admin.site.register(models.FoodItem)
 admin.site.register(models.CartItem)
 admin.site.register(models.FoodCollection)
 admin.site.register(models.Favourite)
-
+admin.site.register(models.Recommendation)
 

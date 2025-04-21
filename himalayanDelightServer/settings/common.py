@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -18,15 +19,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-%=%grtsdw61dqr@u@_($+0sfc9pnk_l-lrg$v@1f(b(=1q-=b5'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -37,8 +29,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_filters',
     'rest_framework',
     'fooditem',
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -74,16 +68,6 @@ WSGI_APPLICATION = 'himalayanDelightServer.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'himalayandelight',
-        'HOST':'localhost',
-        'USER':'root',
-        'PASSWORD':'ronish'
-    }
-}
 
 
 # Password validation
@@ -122,7 +106,39 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGGING = {
+    'version':1,
+    'disable_existing_loggers':False,
+    'handlers':{
+        'console':{
+            'class':'logging.StreamHandler'
+        },
+        'file':{
+            'class':'logging.FileHandler',
+            'filename':'general.log'
+        }
+    },
+    'loggers':{
+        '':{
+            'handlers':['console','file'],
+            'level': os.environ.get('DJANGO_LOG_LEVEL','INFO')
+
+        }
+    },
+    'formatters':{
+        'verbose':{
+            'format':'{asctime} ({levelname})-{name}-{message}',
+            'style': '{'
+        }
+    }
+
+
+}

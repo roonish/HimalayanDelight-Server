@@ -1,7 +1,14 @@
 from django.contrib import admin
-from django.urls import path,include
+from rest_framework.routers import SimpleRouter
+from .views import *
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    # path('cart/', include('mycart.urls')),
-]
+router = SimpleRouter()
+router.register('fooditems',FoodItemViewSet)
+router.register('foodcollections',FoodCollectionViewSet)
+router.register('cartDetails',CartItemViewSet)
+router.register('favourites',FavouritesViewSet)
+router.register('recommendation',RecommendationViewSet)
+
+
+
+urlpatterns = router.urls
