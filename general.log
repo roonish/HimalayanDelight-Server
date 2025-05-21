@@ -965,3 +965,84 @@ Watching for file changes with StatReloader
 Calling all object from fooditem
 Watching for file changes with StatReloader
 Calling all object from fooditem
+Watching for file changes with StatReloader
+Calling all object from fooditem
+Invalid HTTP_HOST header: '192.168.2.205:8000'. You may need to add '192.168.2.205' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.2.205:8000'. You may need to add '192.168.2.205' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '192.168.2.205:8000'. You may need to add '192.168.2.205' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.2.205:8000'. You may need to add '192.168.2.205' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '192.168.2.205:8000'. You may need to add '192.168.2.205' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.2.205:8000'. You may need to add '192.168.2.205' to ALLOWED_HOSTS.
+Bad Request: /himalayandelight/favourites
+Bad Request: /himalayandelight/recommendation
+Bad Request: /himalayandelight/cartDetails
+Watching for file changes with StatReloader
+Calling all object from fooditem
+Invalid HTTP_HOST header: '192.168.2.205:8000'. You may need to add '192.168.2.205' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.2.205:8000'. You may need to add '192.168.2.205' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '192.168.2.205:8000'. You may need to add '192.168.2.205' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.2.205:8000'. You may need to add '192.168.2.205' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '192.168.2.205:8000'. You may need to add '192.168.2.205' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/Users/ronish/Development/projects/HimalayanDelight-Server/venv/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '192.168.2.205:8000'. You may need to add '192.168.2.205' to ALLOWED_HOSTS.
+Bad Request: /himalayandelight/cartDetails
+Bad Request: /himalayandelight/favourites
+Bad Request: /himalayandelight/recommendation
+/Users/ronish/Development/projects/HimalayanDelight-Server/himalayanDelightServer/settings/dev.py changed, reloading.
+Watching for file changes with StatReloader
+Calling all object from fooditem
+Watching for file changes with StatReloader
+Calling all object from fooditem

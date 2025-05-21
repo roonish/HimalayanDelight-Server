@@ -39,5 +39,4 @@ media/
 .DS_Store
 Thumbs.db
 
-
-
+/himalayanDelightServer/settings/*.py
