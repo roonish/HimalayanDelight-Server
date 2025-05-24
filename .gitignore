@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Django
+*.log
+*.pot
+*.pyc
+*.mo
+*.po
+*.sqlite3
+db.sqlite3
+
+# Env
+env/
+venv/
+
+# Static files
+staticfiles/
+static/
+
+# Media files
+media/
+
+# Migrations (optional)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+/himalayanDelightServer/settings/*.py
